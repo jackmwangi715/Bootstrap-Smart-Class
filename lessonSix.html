@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar and Carousel</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/formStyles.css">
+    <script src="bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm topMenu navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Inceptor ICT Training Centre</a>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Products and Services
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Computers and Computer Accessories</a>
+                    <a class="dropdown-item" href="#">Computer Maintenance</a>
+                    <a class="dropdown-item" href="#">Computer Networking</a>
+                    <a class="dropdown-item" href="#">CCTV Installation</a>
+                    <a class="dropdown-item" href="#">VSAT Installation</a>
+                    <a class="dropdown-item" href="#">Graphic Design</a>
+                    <a class="dropdown-item" href="#">Web Design</a>
+                    <a class="dropdown-item" href="#">Software and App Development</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Career Opportunities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/slides/slideOne.jpg" alt="Slide Picture One" width="100%" height="600">
+            <div class="carousel-caption">
+                <h3>Tech Picture One</h3>
+                <p>This picture represents Technology One 2020</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slides/slideTwo.jpg" alt="Slide Picture Two" width="100%" height="600">
+            <div class="carousel-caption">
+                <h3>Tech Picture Two</h3>
+                <p>This picture represents Technology Two 2020</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slides/slideThree.jpg" alt="Slide Picture Three" width="100%" height="600">
+            <div class="carousel-caption">
+                <h3>Tech Picture Three</h3>
+                <p>This picture represents Technology Three 2020</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slides/slideFour.jpg" alt="Slide Picture Four" width="100%" height="600">
+            <div class="carousel-caption">
+                <h3>Tech Picture Four</h3>
+                <p>This picture represents Technology Four 2020</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slides/slideFive.jpg" alt="Slide Picture Five" width="100%" height="600">
+            <div class="carousel-caption">
+                <h3>Tech Picture Five</h3>
+                <p>This picture represents Technology Five 2020</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+</body>
+</html>
